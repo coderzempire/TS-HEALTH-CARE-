@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HMS | Sign In</title>
+
+    <link rel="stylesheet"
+          href="css/login.css">
+
+</head>
+
+
+<body>
+
+
+    <main class="page">
+
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <div class="blue-shape"></div>
+
+            <div class="orange-shape"></div>
+
+        </div>
+
+
+
+        <!-- LOGIN CARD -->
+
+        <section class="login-card">
+
+            <h1>
+                Sign In
+            </h1>
+
+
+            <form id="loginForm">
+
+
+                <!-- EMAIL -->
+
+                <label for="email">
+
+                    Email
+                    <span>*</span>
+
+                </label>
+
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="superadmin@hms.com"
+                    required
+                >
+
+
+
+                <!-- PASSWORD -->
+
+                <div class="password-header">
+
+                    <label for="password">
+
+                        Password
+                        <span>*</span>
+
+                    </label>
+
+
+                    <a href="forgot-password.html">
+
+                        Forgot Password?
+
+                    </a>
+
+                </div>
+
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                >
+
+
+
+                <!-- REMEMBER -->
+
+                <label class="remember">
+
+                    <input
+                        type="checkbox"
+                        id="remember"
+                    >
+
+                    <span>
+                        Remember Me
+                    </span>
+
+                </label>
+
+
+
+                <!-- LOGIN BUTTON -->
+
+                <button type="submit">
+
+                    Login
+
+                </button>
+
+
+
+                <!-- SIGNUP -->
+
+                <p class="signup-text">
+
+                    Don't have an account?
+
+                    <a href="signup.html">
+
+                        Sign Up
+
+                    </a>
+
+                </p>
+
+
+                <div id="message"></div>
+
+
+            </form>
+
+        </section>
+
+
+
+        <!-- ================= ROLES ================= -->
+
+        <section class="roles">
+
+
+            <a
+                href="pages/super-admin/login.html"
+                class="role super-admin">
+
+                SUPER ADMIN
+
+            </a>
+
+
+            <a
+                href="pages/hospital-admin/login.html"
+                class="role hospital-admin">
+
+                HOSPITAL ADMIN
+
+            </a>
+
+
+            <a
+                href="pages/doctor/login.html"
+                class="role doctor">
+
+                DOCTOR
+
+            </a>
+
+
+            <a
+                href="pages/accountant/login.html"
+                class="role accountant">
+
+                ACCOUNTANT
+
+            </a>
+
+
+            <a
+                href="pages/case-handler/login.html"
+                class="role case-handler">
+
+                CASE HANDLER
+
+            </a>
+
+
+            <a
+                href="pages/receptionist/login.html"
+                class="role receptionist">
+
+                RECEPTIONIST
+
+            </a>
+
+
+            <a
+                href="pages/pharmacist/login.html"
+                class="role pharmacist">
+
+                PHARMACIST
+
+            </a>
+
+
+            <a
+                href="pages/lab-technician/login.html"
+                class="role lab-technician">
+
+                LAB TECHNICIAN
+
+            </a>
+
+
+            <a
+                href="pages/nurse/login.html"
+                class="role nurse">
+
+                NURSE
+
+            </a>
+
+
+            <a
+                href="pages/patient/login.html"
+                class="role patient">
+
+                PATIENT
+
+            </a>
+
+
+        </section>
+
+
+    </main>
+
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
