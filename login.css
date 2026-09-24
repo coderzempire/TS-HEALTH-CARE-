@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    background: #edf3f7;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #222;
+
+}
+
+
+.page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 40px 20px;
+
+}
+
+
+
+/* ================= LOGO ================= */
+
+.logo {
+
+    width: 70px;
+
+    height: 70px;
+
+    position: relative;
+
+    margin-bottom: 45px;
+
+}
+
+
+.blue-shape,
+.orange-shape {
+
+    position: absolute;
+
+    width: 24px;
+
+    height: 48px;
+
+    border-radius: 6px;
+
+    transform: rotate(45deg);
+
+}
+
+
+.blue-shape {
+
+    background: #09a9e8;
+
+    left: 15px;
+
+    top: 3px;
+
+}
+
+
+.orange-shape {
+
+    background: #ff972f;
+
+    right: 8px;
+
+    bottom: 3px;
+
+}
+
+
+
+/* ================= LOGIN CARD ================= */
+
+.login-card {
+
+    width: min(665px, 100%);
+
+    background: #ffffff;
+
+    padding: 48px 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.07);
+
+}
+
+
+.login-card h1 {
+
+    text-align: center;
+
+    font-size: 30px;
+
+    margin: 0 0 38px;
+
+}
+
+
+.login-card label {
+
+    display: block;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+
+}
+
+
+.login-card label span {
+
+    color: #e33;
+
+}
+
+
+.login-card input[type="email"],
+.login-card input[type="password"] {
+
+    width: 100%;
+
+    height: 57px;
+
+    border: 1px solid #ccd3d8;
+
+    border-radius: 7px;
+
+    padding: 0 17px;
+
+    font-size: 16px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.login-card input:focus {
+
+    outline: none;
+
+    border-color: #5667f2;
+
+    box-shadow:
+        0 0 0 3px rgba(86, 103, 242, 0.10);
+
+}
+
+
+
+/* ================= PASSWORD HEADER ================= */
+
+.password-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.password-header a {
+
+    color: #159bd7;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+/* ================= REMEMBER ================= */
+
+.remember {
+
+    display: flex !important;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 30px !important;
+
+}
+
+
+.remember input {
+
+    width: 20px;
+
+    height: 20px;
+
+    accent-color: #5865f2;
+
+}
+
+
+
+/* ================= LOGIN BUTTON ================= */
+
+.login-card button {
+
+    width: 100%;
+
+    height: 55px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #5865f2;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.login-card button:hover {
+
+    background: #4455dc;
+
+}
+
+
+
+/* ================= SIGNUP ================= */
+
+.signup-text {
+
+    margin-top: 23px;
+
+}
+
+
+.signup-text a {
+
+    color: #159bd7;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+}
+
+
+#message {
+
+    text-align: center;
+
+    color: #d33;
+
+    font-weight: 600;
+
+    margin-top: 15px;
+
+}
+
+
+
+/* ================= ROLE BUTTONS ================= */
+
+.roles {
+
+    width: min(1160px, 100%);
+
+    margin-top: 72px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px 30px;
+
+}
+
+
+.role {
+
+    height: 50px;
+
+    border-radius: 30px;
+
+    display: grid;
+
+    place-items: center;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: 0.2s;
+
+}
+
+
+.role:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+
+}
+
+
+.super-admin {
+
+    background: #9c1cad;
+
+}
+
+
+.hospital-admin {
+
+    background: #9cdb36;
+
+}
+
+
+.doctor {
+
+    background: #087da5;
+
+}
+
+
+.accountant {
+
+    background: #ff8c20;
+
+}
+
+
+.case-handler {
+
+    background: #2ca04a;
+
+}
+
+
+.receptionist {
+
+    background: #08aac4;
+
+}
+
+
+.pharmacist {
+
+    background: #999;
+
+}
+
+
+.lab-technician {
+
+    background: #704936;
+
+}
+
+
+.nurse {
+
+    background: #8120d5;
+
+}
+
+
+.patient {
+
+    background: #214b4b;
+
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .roles {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .roles {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .login-card {
+
+        padding: 35px 22px;
+
+    }
+
+
+    .password-header {
+
+        display: block;
+
+    }
+
+}
