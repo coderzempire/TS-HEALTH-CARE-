@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HMS | Appointments</title>
+
+    <link rel="stylesheet"
+          href="../css/modules.css">
+
+</head>
+
+
+<body>
+
+
+<header class="module-header">
+
+    <a href="../dashboard.html"
+       class="back">
+
+        ← Dashboard
+
+    </a>
+
+
+    <h1>
+        Appointments
+    </h1>
+
+
+    <a href="book-appointment.html"
+       class="primary-btn">
+
+        + Book Appointment
+
+    </a>
+
+</header>
+
+
+
+<main class="module-container">
+
+
+    <section class="page-intro">
+
+        <div>
+
+            <span>
+                HOSPITAL MANAGEMENT
+            </span>
+
+            <h2>
+                Appointment Management
+            </h2>
+
+            <p>
+                View, schedule and manage hospital appointments.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="table-card">
+
+        <div class="table-header">
+
+            <h2>
+                Upcoming Appointments
+            </h2>
+
+            <input
+                type="search"
+                placeholder="Search appointments..."
+                id="searchAppointment"
+            >
+
+        </div>
+
+
+        <div class="table-wrapper">
+
+            <table id="appointmentTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Patient</th>
+
+                        <th>Doctor</th>
+
+                        <th>Department</th>
+
+                        <th>Date</th>
+
+                        <th>Time</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Rahul Sharma</td>
+
+                        <td>Dr. Arjun Singh</td>
+
+                        <td>General Medicine</td>
+
+                        <td>25 Sep 2026</td>
+
+                        <td>10:30 AM</td>
+
+                        <td>
+                            <span class="status confirmed">
+                                Confirmed
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Priya Verma</td>
+
+                        <td>Dr. Neha Kapoor</td>
+
+                        <td>Cardiology</td>
+
+                        <td>25 Sep 2026</td>
+
+                        <td>12:00 PM</td>
+
+                        <td>
+                            <span class="status pending">
+                                Pending
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Aman Kumar</td>
+
+                        <td>Dr. Raj Malhotra</td>
+
+                        <td>Orthopedics</td>
+
+                        <td>26 Sep 2026</td>
+
+                        <td>11:00 AM</td>
+
+                        <td>
+                            <span class="status confirmed">
+                                Confirmed
+                            </span>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script>
+
+const search =
+    document.getElementById("searchAppointment");
+
+
+search.addEventListener("input", function() {
+
+    const value =
+        search.value.toLowerCase();
+
+
+    const rows =
+        document.querySelectorAll(
+            "#appointmentTable tbody tr"
+        );
+
+
+    rows.forEach(function(row) {
+
+        row.style.display =
+            row.textContent
+            .toLowerCase()
+            .includes(value)
+                ? ""
+                : "none";
+
+    });
+
+});
+
+</script>
+
+
+</body>
+
+</html>
