@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef6fa,
+            #e8f0ff
+        );
+
+    color: #17202a;
+
+}
+
+
+.auth-container {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 70px;
+
+    padding: 40px;
+
+}
+
+
+.auth-brand {
+
+    max-width: 400px;
+
+}
+
+
+.brand-symbol {
+
+    width: 70px;
+
+    height: 70px;
+
+    display: grid;
+
+    place-items: center;
+
+    background: #5667f2;
+
+    color: white;
+
+    border-radius: 18px;
+
+    font-size: 45px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+
+}
+
+
+.auth-brand h1 {
+
+    font-size: 42px;
+
+    line-height: 1.1;
+
+    margin-bottom: 15px;
+
+}
+
+
+.auth-brand p {
+
+    color: #64748b;
+
+    font-size: 18px;
+
+}
+
+
+.auth-card {
+
+    width: 550px;
+
+    background: white;
+
+    padding: 38px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.09);
+
+}
+
+
+.auth-card h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.subtitle {
+
+    color: #64748b;
+
+    margin-bottom: 30px;
+
+}
+
+
+.form-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+}
+
+
+.field {
+
+    margin-bottom: 20px;
+
+}
+
+
+.field label {
+
+    display: block;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+}
+
+
+.field input {
+
+    width: 100%;
+
+    height: 48px;
+
+    border: 1px solid #d3dbe3;
+
+    border-radius: 8px;
+
+    padding: 0 14px;
+
+    font-size: 15px;
+
+}
+
+
+.field input:focus {
+
+    outline: none;
+
+    border-color: #5667f2;
+
+}
+
+
+.terms {
+
+    display: flex;
+
+    gap: 9px;
+
+    align-items: flex-start;
+
+    margin: 5px 0 25px;
+
+    font-size: 14px;
+
+    color: #64748b;
+
+}
+
+
+.terms input {
+
+    margin-top: 3px;
+
+}
+
+
+.auth-card button {
+
+    width: 100%;
+
+    height: 52px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #5667f2;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.auth-card button:hover {
+
+    background: #4354dc;
+
+}
+
+
+#signupMessage {
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-weight: 600;
+
+}
+
+
+.bottom-text {
+
+    text-align: center;
+
+    margin-top: 22px;
+
+    color: #64748b;
+
+}
+
+
+.bottom-text a {
+
+    color: #5667f2;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+@media(max-width: 900px) {
+
+    .auth-container {
+
+        flex-direction: column;
+
+        gap: 30px;
+
+    }
+
+    .auth-brand {
+
+        text-align: center;
+
+    }
+
+    .brand-symbol {
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+}
+
+
+@media(max-width: 600px) {
+
+    .auth-container {
+
+        padding: 20px;
+
+    }
+
+    .auth-card {
+
+        width: 100%;
+
+        padding: 25px;
+
+    }
+
+    .form-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+    }
+
+    .auth-brand h1 {
+
+        font-size: 30px;
+
+    }
+
+}
