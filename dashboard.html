@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HMS | Dashboard</title>
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <span>+</span>
+
+            <strong>
+                HMS
+            </strong>
+
+        </div>
+
+
+        <nav>
+
+            <a href="dashboard.html" class="active">
+                Dashboard
+            </a>
+
+            <a href="modules/appointments.html">
+                Appointments
+            </a>
+
+            <a href="modules/patients.html">
+                Patients
+            </a>
+
+            <a href="modules/laboratory.html">
+                Laboratory
+            </a>
+
+            <a href="modules/pharmacy.html">
+                Pharmacy
+            </a>
+
+            <a href="modules/billing.html">
+                Billing
+            </a>
+
+            <a href="modules/notifications.html">
+                Notifications
+            </a>
+
+            <a href="modules/profile.html">
+                My Profile
+            </a>
+
+        </nav>
+
+
+        <button
+            class="logout"
+            onclick="logout()">
+
+            Logout
+
+        </button>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+
+        <header class="dashboard-header">
+
+            <div>
+
+                <p class="small-title">
+                    HOSPITAL MANAGEMENT SYSTEM
+                </p>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+            </div>
+
+
+            <div class="user">
+
+                <div class="avatar">
+                    U
+                </div>
+
+                <div>
+
+                    <strong id="userName">
+                        User
+                    </strong>
+
+                    <small id="userRole">
+                        Patient
+                    </small>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- WELCOME -->
+
+        <section class="welcome">
+
+            <div>
+
+                <p>
+                    Welcome back,
+                </p>
+
+                <h2 id="welcomeName">
+                    User
+                </h2>
+
+                <span>
+                    Here's what's happening today.
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- STAT CARDS -->
+
+        <section class="stats-grid">
+
+
+            <a href="modules/appointments.html"
+               class="stat-card">
+
+                <span class="stat-icon blue">
+                    📅
+                </span>
+
+                <div>
+
+                    <small>
+                        Appointments
+                    </small>
+
+                    <strong>
+                        08
+                    </strong>
+
+                </div>
+
+            </a>
+
+
+
+            <a href="modules/patients.html"
+               class="stat-card">
+
+                <span class="stat-icon green">
+                    👥
+                </span>
+
+                <div>
+
+                    <small>
+                        Patients
+                    </small>
+
+                    <strong>
+                        124
+                    </strong>
+
+                </div>
+
+            </a>
+
+
+
+            <a href="modules/laboratory.html"
+               class="stat-card">
+
+                <span class="stat-icon orange">
+                    🧪
+                </span>
+
+                <div>
+
+                    <small>
+                        Lab Tests
+                    </small>
+
+                    <strong>
+                        32
+                    </strong>
+
+                </div>
+
+            </a>
+
+
+
+            <a href="modules/billing.html"
+               class="stat-card">
+
+                <span class="stat-icon purple">
+                    ₹
+                </span>
+
+                <div>
+
+                    <small>
+                        Pending Bills
+                    </small>
+
+                    <strong>
+                        05
+                    </strong>
+
+                </div>
+
+            </a>
+
+
+        </section>
+
+
+
+        <!-- QUICK ACTIONS -->
+
+        <section class="content-grid">
+
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <h2>
+                        Quick Actions
+                    </h2>
+
+                </div>
+
+
+                <div class="quick-actions">
+
+                    <a href="modules/book-appointment.html">
+                        <span>📅</span>
+                        Book Appointment
+                    </a>
+
+
+                    <a href="modules/patients.html">
+                        <span>👤</span>
+                        View Patients
+                    </a>
+
+
+                    <a href="modules/laboratory.html">
+                        <span>🧪</span>
+                        Laboratory
+                    </a>
+
+
+                    <a href="modules/pharmacy.html">
+                        <span>💊</span>
+                        Pharmacy
+                    </a>
+
+
+                    <a href="modules/billing.html">
+                        <span>₹</span>
+                        Billing
+                    </a>
+
+
+                    <a href="modules/profile.html">
+                        <span>⚙</span>
+                        Profile
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <h2>
+                        Upcoming Appointments
+                    </h2>
+
+                    <a href="modules/appointments.html">
+                        View All
+                    </a>
+
+                </div>
+
+
+                <div class="appointment">
+
+                    <div class="doctor-avatar">
+                        DR
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Dr. Arjun Sharma
+                        </strong>
+
+                        <small>
+                            General Physician
+                        </small>
+
+                    </div>
+
+                    <time>
+                        10:30 AM
+                    </time>
+
+                </div>
+
+
+                <div class="appointment">
+
+                    <div class="doctor-avatar">
+                        DR
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Dr. Priya Singh
+                        </strong>
+
+                        <small>
+                            Cardiologist
+                        </small>
+
+                    </div>
+
+                    <time>
+                        02:00 PM
+                    </time>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
